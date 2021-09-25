@@ -1,12 +1,12 @@
 
-$(document).ready(function(){
+// Menu
+let btn = document.querySelector("#btn")
+let sidebar = document.querySelector(".sidebar")
+let searchBtn = document.querySelector(".bx-search")
 
-    $(window).resize(function(){
-        atualizaLayout()
-    })
-
-    $("#controll-menu").on('click', function(){
-        console.log('funcionou o click')
-        console.log($("#page-content").attr('class'))
-    })
-})
+btn.onclick = function() {
+    sidebar.classList.toggle("active")
+}
+searchBtn.onclick = function() {
+    sidebar.classList.toggle("active")
+}
